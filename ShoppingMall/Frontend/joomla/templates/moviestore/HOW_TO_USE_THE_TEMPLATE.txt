@@ -1,0 +1,17 @@
+Watch this tutorial video first: http://www.youtube.com/watch?feature=player_embedded&v=8xSKn5d6ASg
+
+*** HOW TO INSTALL THE TEMPLATE:
+Make sure you are using the latest Joomla version.
+
+Log in to Admin and go to:
+Extensions > Extension Manager > Browse file > Upload and Install template
+
+If it was successful go to:
+Extensions > Module Manager and set the modules to their positions.
+
+ex. If you want the login form on the left site in the Module Manager click on the "Login" link from the list > click on Select Positions > Choose the position "left" or any other position and set the Module Assignment to "On all pages".
+
+The sidebar module positions are called "left" and "right".
+For the position names check the image called "Module positions" found in this template folder.
+
+THERE ARE TEMPLATE OPTIONS (template manager > click on the Templatename)

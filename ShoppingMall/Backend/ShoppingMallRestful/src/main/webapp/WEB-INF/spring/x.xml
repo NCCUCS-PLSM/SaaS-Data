@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+ xmlns:beans="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+ http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+   
+    
+     <http use-expressions="true" auto-config="true">
+  <intercept-url pattern="/backend/order" access="hasRole('ROLE_USER')"/>
+  <intercept-url pattern="/backend/product" access="hasRole('ROLE_USER')"/>
+  <intercept-url pattern="/login" access="isAnonymous()"/>
+  <intercept-url pattern="/**" access="permitAll"/>
+        <form-login login-processing-url="/j_spring_security_check"
+         login-page="/login" default-target-url="/index"
+         authentication-failure-url="/login.jsp?error=1"/>
+        <logout logout-url="/j_spring_security_logout"/>
+    </http>
+    
+    <authentication-manager alias="authenticationManager">
+        <authentication-provider user-service-ref="securityManager"/>
+    </authentication-manager>
+    <beans:bean id="securityManager" class="com.arthur.shoppingmall.domain.SecurityManager"/>
+</beans:beans>

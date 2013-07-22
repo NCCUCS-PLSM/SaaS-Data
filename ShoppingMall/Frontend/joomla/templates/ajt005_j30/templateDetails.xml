@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 3.0//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.0" type="template" client="site">
+    <name>ajt005_j30</name>
+    <version>3.0</version>
+    <creationDate>October, 2012</creationDate>
+    <author>AJoomlaTemplates.com</author>
+    <authorEmail>support@AJoomlaTemplates.com</authorEmail>
+    <authorUrl>http://AJoomlaTemplates.com</authorUrl>
+    <copyright>Copyright 2012 - AJoomlaTemplates.com</copyright>
+    <license>GNU/GPL</license>
+	<description><![CDATA[
+	<h1>Prototype - Joomla 3.0 Template</h1>
+	<img src="../templates/ajt005_j30/template_thumbnail.png" align="left" style="padding-right:10px;"/>
+	<b>Joomla 3.0 Template developed by <a target="_blank" href="http://ajoomlatemplates.com">AJoomlaTemplates</a>, released under the <a target="_blank" href="http://www.gnu.org/licenses/gpl.html">GNU/GPL</a> license.<br />
+	<br />Need help to set up your template? Check out the <a target="_blank" href="http://ajoomlatemplates.com/documentation/" target="_blank">documentation</a> page.
+	<br /><br />Download free joomla extensions from <a target="_blank" href="http://jextensions.com">jExtensions.com</a>,
+	<br /><br />Copyright &copy; 2012 AJoomlaTemplates.com - All Rights Reserved</b>
+	]]></description>
+	<files>
+		<filename>index.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>functions.php</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>html/</folder>
+		<folder>css/</folder>
+		<folder>images/</folder>
+		<folder>js/</folder>
+		<folder>bootstrap/</folder>		
+	</files>
+	<positions>
+		<position>breadcrumbs</position>
+		<position>top</position>
+		<position>login</position>
+		<position>search</position>
+		<position>social</position>
+		<position>logo</position>
+		<position>menu</position>
+		<position>left</position>
+		<position>right</position>
+		<position>slideshow</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user5</position>
+		<position>user6</position>
+		<position>user7</position>
+		<position>user8</position>
+		<position>user9</position>
+		<position>user10</position>
+		<position>copyright</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="jquery" type="list" default="yes" label="jQuery" description="Enable or disable jQuery latest version." filter="word">
+					<option value="yes">Enable</option>
+					<option value="no">Disable</option>
+				</field>				
+				<field name="scrolltop" type="list" default="yes" label="Back to Top Button" description="Enable or disable Back to Top button. This requires jQuery plugin." filter="word">
+					<option value="yes">Enable</option>
+					<option value="no">Disable</option>
+				</field>
+				<field name="superfish" type="list" default="yes" label="Superfish Menu Effect" description="Enable or disable Supperfish effect for main navigation menu. This requires jQuery plugin." filter="word">
+					<option value="yes">Enable</option>
+					<option value="no">Disable</option>
+				</field>											
+				<field name="logotype" type="list" default="image" label="Logo Type" description="Choose the type of the logo you want to display." filter="word">
+					<option value="image">Image Logo</option>
+					<option value="text">Text Logo</option>
+				</field>			
+			 <field name="logo" type="media" label="Logo Image" description="Please choose an image. If you want to display the original logo from the template, click on Clear and leave the field blank." />
+			 <field name="sitetitle"  type="text" default="Prototype" label="Logo Text" description="Please add your site title here, it's only displayed if you don't use a the text logo option." filter="string" />
+			 <field name="sitedesc"  type="text" default=""	label="Site Description" description="Add your site's description here. Leave it blank to disable." filter="string" />
+			</fieldset>
+		</fields>
+	</config>	
+</extension>

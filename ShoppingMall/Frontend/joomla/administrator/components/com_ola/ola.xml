@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+
+	<name>COM_OLA</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>Setembro 2012</creationDate>
+	<author>Christophe Demko</author>
+	<authorEmail>john.doe@example.org</authorEmail>
+	<authorUrl>http://www.example.org</authorUrl>
+	<copyright>Copyright (C) 2012 Christophe Demko. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>COM_OLA_DESCRIPTION</description>
+ 
+	<!-- Runs on install/uninstall/update; New in 1.6 -->
+	<scriptfile>script.php</scriptfile>
+ 
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update> <!-- Runs on update; New in 1.6 -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+ 
+	<!-- Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder
+		to copy FROM in the package to install therefore files copied
+		in this section are copied from /site/ in the package -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>ola.php</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>language</folder>
+	</files>
+ 
+	<media destination="com_ola" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+	</media>
+ 
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.com_ola.ini</language>
+		<language tag="pt-BR">language/pt-BR/pt-BR.com_ola.ini</language>
+	</languages>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="../media/com_ola/images/tux-16x16.png">COM_OLA_MENU</menu>
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<filename>ola.php</filename>
+			<filename>controller.php</filename>
+			<!-- SQL files section -->
+			<folder>sql</folder>
+			<!-- tables files section -->
+			<folder>tables</folder>
+			<!-- models files section -->
+			<folder>models</folder>
+			<!-- views files section -->
+			<folder>views</folder>
+			<!-- controllers files section -->
+			<folder>controllers</folder>
+			<!-- helpers files section -->
+			<folder>helpers</folder>
+		</files>
+ 
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_ola.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_ola.sys.ini</language>
+			<language tag="pt-BR">language/pt-BR/pt-BR.com_ola.ini</language>
+			<language tag="pt-BR">language/pt-BR/pt-BR.com_ola.sys.ini</language>
+		</languages>
+	</administration>
+ 
+	<!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="Ola Update Site">http://yourdomain.com/update/ola-update.xml</server>
+	</updateservers>
+ 
+</extension>
