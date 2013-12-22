@@ -1,0 +1,11 @@
+TenantPrivateTable, TenantNo, TenantName, Password, TenantRealName
+CourseInfoCommonFields, CourseId, CourseName, Instructors, Credit, Days, Time, IsClosed 
+StudentInfoCommonFields, StudentId, StudentName, Password, Major, Grade 
+SelectCourseCommonFields, SelectId, StudentId, CourseId, SelectDate, Priority 
+NccuCourseInfo, Location
+NccuStudentInfo
+NccuSelectCourse
+FjuCourseInfo
+FjuStudentInfo
+FjuSelectCourse
+SelectCourseCommonFields, SelectId, StudentId, CourseId, SelectDate, Priority 
