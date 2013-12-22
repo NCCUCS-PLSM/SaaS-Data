@@ -1,0 +1,1 @@
+INSERT INTO objects(ObjectId,TenantId,ObjectName) VALUES(100,1,'Hello')
