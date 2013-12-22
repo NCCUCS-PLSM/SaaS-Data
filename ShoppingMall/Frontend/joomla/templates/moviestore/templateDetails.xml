@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.7//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
+<extension version="1.7" type="template" client="site">
+    <name>MovieStore</name>
+    <version>2.5.0</version>
+    <creationDate>14-01-2013</creationDate>
+    <author>JS</author>
+    <authorUrl>http://joomlaskins.net</authorUrl>
+    <copyright>2012</copyright>
+    <license>see website</license><description><![CDATA[
+<p>Free template - Please check the file called "Module_Positions.jpg"</p>
+<p>First of all go the the Template Manager and select this template and make it default. Click the Template to see the template options.</p>
+<p>This template was released under the creative commons license. You are not allowed to remove the author link(s), but you are free to make any other modifications to the template. You can use the template on commercial websites as well.</p>
+<h1><a href="http://joomlaskins.net" target="_blank">More free templates</a></h1>
+]]> </description><files>	<filename>index.php</filename>	<filename>favicon.ico</filename>	<filename>params.ini</filename>	<filename>functions.php</filename>	<filename>template_thumbnail.jpg</filename>	<filename>templateDetails.xml</filename>	<filename>HOW_TO_USE_THE_TEMPLATE.txt</filename>
+	<filename>LICENSE.txt</filename>		<filename>MODULE_POSITIONS.jpg</filename>	<folder>html/</folder>	<folder>css/</folder>	<folder>images/</folder>	<folder>slideshow/</folder>
+	<folder>modules/</folder>	</files><positions>	<position>breadcrumb</position>	<position>top</position>		<position>mainmenu</position>	<position>right</position>
+	<position>top1</position>
+	<position>top2</position>	<position>user1</position>	<position>user2</position>
+	<position>user3</position></positions>
+<config>
+  <fields name="params">
+    <fieldset name="basic">
+	
+	<field name="slogandisable" type="radio" default="1" label="Custom slogan" description="Show slogan">	  <option value="0">Hide</option>	  <option value="1">Show</option>
+       </field>  	      <field name="slogan" type="textarea" default="Custom slogan" label="Site slogan" description="Slogan below the logo. Leave blank for no slogan." rows="1" cols="60" />	      <field name="footerdisable" type="radio" default="1" label="Custom footer text">	  <option value="0">Hide</option>	  <option value="1">Show</option>
+       </field>  	      <field name="footertext" type="textarea" default="Custom text here" label="Custom text here" description="Custom text here" rows="1" cols="60"/>   <field name="analyticsdisable" type="radio" default="1" label="Google analytics">	  <option value="0">Disable</option>	  <option value="1">Enable</option>
+       </field> 	      <field name="googleanalytics" type="textarea" default="UA-1111111-22" label="Google analytics UA code only (replace the code below)" description="Paste your google analytics UA code only. Not the whole script. Example: UA-1111111-22." rows="1" cols="40"/>
+   <field name="googletranslate" type="radio" default="1" label="Google translate" description="Enable google translate">
+	  <option value="0">Hide</option>
+	  <option value="1">Show</option>
+       </field> 	   	
+   <field name="jscroll" type="radio" default="1" label="Back-to-top module" description="Back-to-top module">
+	  <option value="0">Hide</option>
+	  <option value="1">Show</option>
+       </field>
+ 
+   <field type="spacer" name="spacer" hr="true" /> 
+   <field name="slidehome" type="radio" default="1" label="Show slideshow on homepage" description="Show slideshow on homepage">
+	  <option value="0">Slideshow on all pages</option>
+	  <option value="1">Slideshow on homepage only</option>	  
+       </field>  	   
+   <field name="slidedesc1" type="textarea" default="Description slide 1" label="Description slide 1" description="Add title and caption" rows="1" cols="60" />
+   <field name="url1" type="textarea" default="/" label="URL 1" description="URL 1" rows="1" cols="40" /> 	   
+   <field name="slidedesc2" type="textarea" default="Description slide 2" label="Description slide 2" description="Slideshow content 2." rows="1" cols="60" />
+   <field name="url2" type="textarea" default="/" label="URL 2" description="URL 2" rows="1" cols="40" />	
+   <field name="slidedesc3" type="textarea" default="Description slide 3" label="Description slide 3" description="Slideshow content 3." rows="1" cols="60" />
+   <field name="url3" type="textarea" default="/" label="URL 3" description="URL 3" rows="1" cols="40" />	   
+   <field name="slidedesc4" type="textarea" default="Description slide 4" label="Description slide 4" description="Slideshow content 4." rows="1" cols="60" />
+   <field name="url4" type="textarea" default="/" label="URL 4" description="URL 4" rows="1" cols="40" />
+    </fieldset>
+  </fields>
+</config>
+</extension>

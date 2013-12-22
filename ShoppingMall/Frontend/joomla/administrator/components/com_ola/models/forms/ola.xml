@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_ola/models/rules"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="bemvindo"
+			type="text"
+			label="COM_OLA_OLA_FIELD_BEMVINDO_LABEL"
+			description="COM_OLA_OLA_FIELD_BEMVINDO_DESC"
+			size="40"
+			class="inputbox validate-bemvindo"
+			validate="bemvindo"
+			required="true"
+			default=""
+		/>
+		<field
+			name="catid"
+			type="category"
+			extension="com_ola"
+			class="inputbox"
+			default=""
+			label="COM_OLA_OLA_FIELD_CATID_LABEL"
+			description="COM_OLA_OLA_FIELD_CATID_DESC"
+			required="true"
+		>
+			<option value="0">JOPTION_SELECT_CATEGORY</option>
+		</field>
+	</fieldset>
+	<fields name="params">
+		<fieldset
+			name="params"
+			label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+		>
+			<field
+				name="show_category"
+				type="list"
+				label="COM_OLA_OLA_FIELD_SHOW_CATEGORY_LABEL"
+				description="COM_OLA_OLA_FIELD_SHOW_CATEGORY_DESC"
+				default=""
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>
