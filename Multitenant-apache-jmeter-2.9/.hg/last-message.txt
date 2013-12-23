@@ -1,2 +1,0 @@
-Fix Update bugs 
-Fix Create Table bugs

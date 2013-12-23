@@ -1,1 +1,0 @@
-INSERT INTO Relationships(AssociationId,SourceDataGuid,TargetDataGuid,TenantId,SourceObjectId,TargetObjectId) VALUES(1,hello,1,1,1,1)
